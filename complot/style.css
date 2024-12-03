@@ -2,7 +2,9 @@ body {
 
   margin: 10mm;
   background-color: #3f3f45a2;
+  padding: auto;
 }
+
 .groupe {
 
   display: grid;
@@ -51,15 +53,16 @@ padding: 15px;
 .page{
 
 padding: 20px;
-display: flex;
-flex-direction: column;
+display: grid;
+grid-template-columns: auto auto;
+
 }
 
 .contenu_page{
 
 padding: 20px;
 display: grid;
-grid-template-columns: auto auto;
+grid-template-rows: auto auto;
 
 }
 
@@ -73,19 +76,23 @@ flex-direction: column;
 }
 
 .titre_transparent {
-background-image: url("haut_de_page_pigeons.jpg");
-background-repeat: no-repeat;
-background-position: center;
-background-size: cover;
--webkit-text-fill-color: transparent;
--webkit-background-clip: text;
-font-size: 300%;
-text-align: center;
-cursor: url("curseur_pigeon.jpg"), auto;
+  background-image: url("haut_de_page_pigeons.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+  font-size: 300%;
+  text-align: center;
 }
 
-.titre_page {
-font-size: 150%;
-text-align: center;
+.titre_transparent :hover {
+cursor: url("pigeon_bird_icon_250707.png"), auto;
+} 
 
+.page h2 {
+  backdrop-filter: blur(200px); 
+  border-radius: 25px;
+  padding: 15px;
+  justify-items: center;
 }
