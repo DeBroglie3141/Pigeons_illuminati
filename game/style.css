@@ -1,0 +1,15 @@
+
+
+body {
+    display: flex;
+}
+
+aside {
+    flex: 0 0 15%;
+    background-color: #f0f0f0;
+}
+
+section {
+    flex: 1;
+    background-color: aqua;
+}
