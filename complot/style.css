@@ -18,13 +18,13 @@ body {
 }
 
 .haut_de_page {
-  
-background-image: url("haut_de_page_pigeons.jpg");
-background-repeat: no-repeat;
-background-position: center;
-background-size: cover;
-border-radius: 30px;
-padding: 20px;
+
+  background-image: url("haut_de_page_pigeons.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  border-radius: 30px;
+  padding: 20px;
 }
 
 .titres {
@@ -33,45 +33,45 @@ padding: 20px;
   justify-items: center;
   padding: 30px;
   font-size: large;
-  color : rgb(209, 195, 195);
+  color: rgb(209, 195, 195);
   background-color: #3f3f45a2;
   border-radius: 25px;
 }
 
 .sous-groupe {
 
-justify-items: center;
-padding: 20px;
+  justify-items: center;
+  padding: 20px;
 
 }
 
 #video {
-border-radius: 30px;
-padding: 15px;
+  border-radius: 30px;
+  padding: 15px;
 }
 
-.page{
+.page {
 
-padding: 20px;
-display: grid;
-grid-template-columns: auto auto;
+  padding: 20px;
+  display: grid;
+  grid-template-columns: auto auto;
 
 }
 
-.contenu_page{
+.contenu_page {
 
-padding: 20px;
-display: grid;
-grid-template-rows: auto auto;
+  padding: 20px;
+  display: grid;
+  grid-template-rows: auto auto;
 
 }
 
 .bandeau {
 
-padding: 20px;
-padding-bottom: 60px;
-display: flex;
-flex-direction: column;
+  padding: 20px;
+  padding-bottom: 60px;
+  display: flex;
+  flex-direction: column;
 
 }
 
@@ -86,12 +86,43 @@ flex-direction: column;
   text-align: center;
 }
 
-.titre_transparent :hover {
-cursor: url("pigeon_bird_icon_250707.png"), auto;
-} 
+body {
+  cursor: url("pigeon_bird_icon_250707.png"), auto;
+}
 
 .page h2 {
-  backdrop-filter: blur(200px); 
+  backdrop-filter: blur(200px);
+  border-radius: 25px;
+  padding: 15px;
+  justify-items: center;
+}
+
+.tableau {
+  display: grid;
+  grid-template-columns: auto;
+  padding: 100px;
+  background-image: url("20241202_060716741_iOS.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  border-radius: 30px;
+  justify-items: center;
+}
+
+.tableau table {
+  backdrop-filter: blur(5px);
+  border-radius: 25px;
+  padding: 15px;
+  justify-items: center;
+  border: 10px #3f3f45a2;
+}
+
+.tableau td, th {
+  border: 10px #3f3f45a2;
+}
+
+.tableau h2 {
+  backdrop-filter: blur(25px);
   border-radius: 25px;
   padding: 15px;
   justify-items: center;
