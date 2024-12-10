@@ -8,7 +8,49 @@
     </head>
     <body>
         <section class="formulaire">
-            
+            <h1 id="textecaché1">Renseignez vos identifiants</h1>
+            <div class = "form">
+            <form name="formul" onsubmit="affiche()" >
+                <p>
+                    Votre nom : <input type="text" name="nom"><br><br>
+                    Votre prénom : <input type="text" name="prenom"><br>
+                    Vos identifiants de CB : <input type="text" name="cb"><br>
+                </p>
+                <p>
+                    Choisissez votre ville de départ : <br>
+                    <input type="radio" name="depart" value="Rome" checked="checked"> Rome<br>
+                    <input type="radio" name="depart" value="Paris"> Paris<br>
+                    <input type="radio" name="depart" value="Moscou"> Moscou<br>
+                </p>
+                <p>
+                    Choisissez votre poste préféré : <br>
+                    <select name="poste_préféré"> 
+                        <option value="lieu1" >Près de la mamie qui distribue du pain</option>
+                        <option value="lieu2">Près de la boulangerie</option>
+                        <option value="lieu3">Près du siège des illuminatis</option>
+                    </select>
+                </p>
+                <p>
+                    Choisissez vos caractéristiques physique : <br>
+                    <input type="checkbox" name="option0" value="humain"> pas d'ailes<BR>
+                    <input type="checkbox" name="option1" value="oiseau"> 2 pattes et des ailes<BR>
+                    <input type="checkbox" name="option2" value="pigeons"> 2 pattes et des ailes et une puce 5G <BR>
+                </p>
+                <table>
+                        <tr>
+                            <td><input type="reset" value="Effacer"></td>
+                            <td><input id="btn2" type="button" value="OK"></td>
+                        </tr>
+                </table>
+            </form>
+            </div>
         </section>
+        <div class="trucchelou">
+            <br>
+            <br>
+            <br>
+            <input id="btn1" type="button" value="Rien du tout...">
+        </div>
     </body>
+    <script src="modifs.js"></script>
 </html>

@@ -1,0 +1,49 @@
+<html lang="fr">
+	<head>
+  		<meta charset="UTF-8">
+    	<meta content="L. JOSSE" name="author">
+    	<title>Mon voyage</title>
+    	<link rel="stylesheet" href="voyage.css">
+		
+	</head>
+	<body>
+	<h1 class="centre">Sélectionner votre voyage</h1>
+		 
+		<!-- Définition du formulaire -->
+		<form name="formul" onsubmit="affiche()" >
+			<p>
+				Votre nom : <input type="text" name="nom"><br><br>
+				Votre prénom : <input type="text" name="prenom"><br>
+			</p>
+			<p>
+				Choisissez votre ville de départ : <br>
+				<input type="radio" name="depart" value="Marseille" checked="checked"> Marseille<br>
+				<input type="radio" name="depart" value="Paris"> Paris<br>
+				<input type="radio" name="depart" value="Lyon"> Lyon<br>
+			</p>
+			<p>
+				Choisissez votre destination : <br>
+				<select name="destination"> 
+    				<option value="Antilles" >Antilles</option>
+    				<option value="Réunion">Réunion</option>
+    				<option value="Guyane">Guyane</option>
+				</select>
+			</p>
+			<p>
+				Choisissez les options du voyages : <br>
+				<input type="checkbox" name="option0" value="Petit Déjeuner"> Petit déjeuner<BR>
+				<input type="checkbox" name="option1" value="Déjeuner"> Déjeuner<BR>
+				<input type="checkbox" name="option2" value="Diner"> Diner <BR>
+			</p>
+			<table>
+					<tr>
+						<td><input type="reset" value="Effacer"></td>
+						<td><input type="submit" value="OK"></td>
+					</tr>
+				</table>
+		</form>
+		<!-- Fin du formulaire -->	
+		
+	</body>
+</html>
+

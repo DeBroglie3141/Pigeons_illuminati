@@ -127,3 +127,36 @@ body {
   padding: 15px;
   justify-items: center;
 }
+
+.formulaire {
+  display: grid;
+  grid-template-columns: auto;
+  padding: 100px;
+  background-image: url("20241202_060850464_iOS.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  border-radius: 30px;
+  justify-items: center;
+}
+
+
+.formulaire h1 {
+  backdrop-filter: blur(15px);
+  border-radius: 25px;
+  padding: 15px;
+  justify-items: center;
+}
+
+
+.form {
+  backdrop-filter: blur(15px);
+  border-radius: 25px;
+  padding: 15px;
+  justify-items: center;
+}
+
+.trucchelou {
+  padding: 55px;
+  text-align: right;
+}
