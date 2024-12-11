@@ -4,10 +4,13 @@
     background-color: #821131;
     overflow: hidden;
     margin: auto;
+    margin-top: 3em;
+    margin-bottom: 3em;
     width: 75%;
     text-align: center;
     border: solid 10px #C7253E;
     border-radius: 30px;
+    animation: vibration 2s ease 0.5s 1 normal forwards;
 }
 
 .disclaimer-yellow-strip {
