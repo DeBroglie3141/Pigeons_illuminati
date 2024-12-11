@@ -58,8 +58,8 @@ h1 {
 }
 
 section {
-    margin-left: 10px;
-    margin-right: 10px;
+    margin-left: 20px;
+    margin-right: 20px;
 }
 
 a {
@@ -90,4 +90,33 @@ li {
 
 section:not(.disclaimer-div) > p {
     text-align: justify;
+}
+
+footer {
+    border-top: 10px solid rgb(36, 67, 101);
+    background-color: rgb(205, 205, 205);
+    display: flex;
+    flex-wrap: wrap;
+    padding-top: 1em;
+}
+
+footer > div {
+    height: 20em;
+    padding-left: 10px;
+    padding-right: 10px;
+    flex-basis: 100px;
+    flex-grow: 1;
+    text-align: center;
+}
+
+.logo-classe {
+    text-align: right;
+    height: inherit;
+    width: 100%;
+    overflow: hidden;
+}
+
+footer > div > p {
+    text-align: justify;
+    word-spacing:-2px;
 }
