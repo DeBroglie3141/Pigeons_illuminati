@@ -93,8 +93,9 @@ section:not(.disclaimer-div) > p {
 }
 
 footer {
+    margin-top: 2em;
     border-top: 10px solid rgb(36, 67, 101);
-    background-color: rgb(205, 205, 205);
+    background-color: rgb(214, 255, 245);
     display: flex;
     flex-wrap: wrap;
     padding-top: 1em;
@@ -104,7 +105,7 @@ footer > div {
     height: 20em;
     padding-left: 10px;
     padding-right: 10px;
-    flex-basis: 100px;
+    flex-basis: 150px;
     flex-grow: 1;
     text-align: center;
 }
