@@ -1,0 +1,29 @@
+@import url(variables.css);
+
+.disclaimer-div {
+    background-color: #821131;
+    overflow: hidden;
+    margin: auto;
+    width: 75%;
+    text-align: center;
+    border: solid 10px #C7253E;
+    border-radius: 30px;
+}
+
+.disclaimer-yellow-strip {
+    background-color: #fa9c3f;
+    height: 1em;
+}
+
+.disclaimer-title {
+    /* Astuce pour mettre du linear gradient dans du texte*/
+    background-image: var(--red-gradient);
+    color: transparent;
+    background-clip: text;
+}
+
+.disclaimer-div>p {
+    color: white;
+    padding-right: 10px;
+    padding-left: 10px;
+}
