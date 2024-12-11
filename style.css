@@ -30,3 +30,64 @@
     padding-right: 10px;
     padding-left: 10px;
 }
+
+body {
+    margin: 0;
+    font-family: sans-serif;
+    height: 100vh;
+    background: var(--white-blue-gradient);
+    background-attachment: fixed;
+}
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    backdrop-filter: blur(75px);
+    height: 100px;
+    z-index: 999;
+}
+
+h1 {
+    margin-top: 0;
+    margin-bottom: 0;
+    margin-left: 20px;
+    top: 40%; 
+    transform: translate(0, 50%);
+}
+
+section {
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+a {
+    color: rgb(43, 106, 154);
+    font-weight: 900;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+a:visited {
+    text-decoration: line-through;
+}
+
+ul {
+    list-style-type: "🐦  ";
+}
+
+li {
+    margin-bottom: 10px;
+}
+
+#space-after-title {
+    height: 75px;
+}
+
+section:not(.disclaimer-div) > p {
+    text-align: justify;
+}
