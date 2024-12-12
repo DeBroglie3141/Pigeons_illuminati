@@ -164,3 +164,19 @@ body {
   padding: 55px;
   text-align: right;
 }
+
+@media (width >= 500px)  {
+  .page {
+    padding: 20px;
+    display: flex;
+    flex-direction: row;
+  }
+}
+
+@media (width <= 500px)  {
+  .page {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+  }
+}
