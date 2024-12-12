@@ -67,12 +67,16 @@ body {
 }
 
 .bandeau {
-
-  padding: 20px;
   padding-bottom: 60px;
   display: flex;
   flex-direction: column;
-
+  padding: 20px;
+  background-image: url("20241130_091659806_iOS.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  border-radius: 30px;
+  text-align: center;
 }
 
 .titre_transparent {
