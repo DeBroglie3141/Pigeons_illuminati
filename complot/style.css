@@ -7,8 +7,8 @@ body {
 
 .groupe {
 
-  display: flex;
-  flex-direction: row !important;
+  display: grid;
+  grid-template-columns: auto auto;
   padding: 20px;
   background-image: url("haut_de_page_pigeons2.jpg");
   background-repeat: no-repeat;
@@ -52,10 +52,9 @@ body {
 }
 
 .page {
-
+  display: grid;
+  grid-template-columns: auto auto;
   padding: 20px;
-  display: flex;
-  flex-direction: row;
   transition: 0.3s ease;
 }
 
@@ -169,9 +168,11 @@ body {
 
 @media (max-width: 768px) {
   .page {
+    display: flex;
     flex-direction: column !important;
   }
   .groupe {
+    display: flex;
     flex-direction: column !important;
   }
 }
