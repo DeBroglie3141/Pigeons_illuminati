@@ -7,14 +7,15 @@ body {
 
 .groupe {
 
-  display: grid;
-  grid-template-columns: auto auto;
+  display: flex;
+  flex-direction: row !important;
   padding: 20px;
   background-image: url("haut_de_page_pigeons2.jpg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
   border-radius: 30px;
+  justify-self: center;
 }
 
 .haut_de_page {
@@ -53,9 +54,9 @@ body {
 .page {
 
   padding: 20px;
-  display: grid;
-  grid-template-columns: auto auto;
-
+  display: flex;
+  flex-direction: row;
+  transition: 0.3s ease;
 }
 
 .contenu_page {
@@ -99,6 +100,7 @@ body {
   border-radius: 25px;
   padding: 15px;
   justify-items: center;
+  font-size: 100%;
 }
 
 .tableau {
@@ -165,18 +167,11 @@ body {
   text-align: right;
 }
 
-@media (width >= 500px)  {
+@media (max-width: 768px) {
   .page {
-    padding: 20px;
-    display: flex;
-    flex-direction: row;
+    flex-direction: column !important;
   }
-}
-
-@media (width <= 500px)  {
-  .page {
-    padding: 20px;
-    display: flex;
-    flex-direction: column;
+  .groupe {
+    flex-direction: column !important;
   }
 }
