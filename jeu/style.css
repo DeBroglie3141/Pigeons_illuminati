@@ -1,19 +1,7 @@
+/*
+    Importons des élèments répétitifs
+    Il est préférable de lire d'abord les styles répétitifs
+    pour mieux comprendre ce fichier, et pourquoi il est si vide
+*/
+@import url(./../global_used_files/style_base.css);
 
-
-header {
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-    backdrop-filter: blur(75px);
-    height: 100px;
-    z-index: 999;
-}
-
-h1 {
-    margin-top: 0;
-    margin-bottom: 0;
-    margin-left: 20px;
-    top: 40%; 
-    transform: translate(0, 50%);
-}
