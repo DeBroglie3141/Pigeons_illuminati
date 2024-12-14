@@ -5,3 +5,37 @@
 */
 @import url(./../global_used_files/style_base.css);
 
+
+#at-center {
+    /*
+    Pour la barre de navigation à gauche sans casser le footer
+    (pas besoin de s'embêter avec un flexbox un grid est suffisant)
+    */
+    display: grid;
+    grid-template-columns: 20% auto;
+    margin-top: 10pt;
+}
+
+aside {
+    padding: 15px;
+    background-image: var(--white-blue-gradient);
+    border-top-right-radius: 25px;
+    border-bottom-right-radius: 25px;
+    border-color: rgb(42, 82, 124);
+    border-width: 1px;
+}
+
+aside > em {
+    font-weight: bold;
+}
+
+/* Masque la barre de navigation sur les petits écrans*/
+@media (max-width: 640px) {
+    aside {
+        visibility: collapse;
+    }
+    #at-center {
+        grid-template-columns: auto;
+    }
+}
+
