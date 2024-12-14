@@ -1,0 +1,80 @@
+body {
+    background-color: gray;
+
+    height: 100vh;
+    size: 100%;
+    
+    display: flex;
+    justify-content: flex-start;
+    gap: 30px;
+
+    color: rgb(255, 255, 255);
+    font-size: 11px;
+    backdrop-filter: blur(5px) saturate(70%); /* Pour la lisibilité */
+}
+
+header {
+    text-align: center;
+    font-weight: 200;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.bandeau {
+    display: none; /* On est sur téléphone a priori*/
+    text-align: center;
+    height: 100%;
+}
+.bandeau ul {
+    text-align: left;
+}
+
+#science table, th, td {
+    text-align: center;
+    border: 1px solid;
+    border-collapse: collapse;
+}
+
+/* Sur ordinateur */
+@media screen and (min-width: 640px)  {
+    body {
+        background-size: cover;
+        background-image: url("images/bg_pigeons.jpg");
+    }
+
+    main {
+        display: grid;
+        grid-template-rows: 45% 10% 45%;
+        grid-template-columns: 45% 10% 45%;
+    }
+
+    #politique {
+        grid-row: 1;
+        grid-column: 1;
+    }
+    #societe {
+        grid-row: 1;
+        grid-column: 3;
+    }
+
+    #science {
+        grid-row: 3;
+        grid-column: 1;
+    }
+    #savoir_plus {
+        grid-row: 3;
+        grid-column: 3;
+    }
+
+    .bandeau {
+        display: block;
+        backdrop-filter: blur(10px);
+    }
+    .titre {
+        display: none;
+    }
+}
