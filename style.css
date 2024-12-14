@@ -1,4 +1,4 @@
-@import url(variables.css);
+@import url(./global_used_files/variables.css);
 
 .disclaimer-div {
     background-color: #821131;
@@ -45,7 +45,7 @@ header {
     left: 0;
     right: 0;
     backdrop-filter: blur(75px);
-    height: 100px;
+    height: 90px;
     z-index: 999;
 }
 
@@ -98,8 +98,8 @@ section:not(.disclaimer-div) > p {
 
 footer {
     margin-top: 2em;
-    border-top: 10px solid rgb(36, 67, 101);
-    background-color: rgb(214, 255, 245);
+    border-top: 10px solid rgb(42, 82, 124);
+    background-color: rgb(203, 234, 255);
     display: flex;
     flex-wrap: wrap;
     padding-top: 1em;
@@ -119,6 +119,10 @@ footer > div {
     height: inherit;
     width: 100%;
     overflow: hidden;
+}
+
+footer > div > em {
+    font-weight: bold;
 }
 
 footer > div > p {
