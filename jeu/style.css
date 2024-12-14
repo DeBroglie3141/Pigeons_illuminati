@@ -23,6 +23,7 @@ aside {
     border-bottom-right-radius: 25px;
     border-color: rgb(42, 82, 124);
     border-width: 1px;
+    animation: fade-in-left 1.5s cubic-bezier(0.65, 0, 0.35, 1) 0s 1 normal forwards;
 }
 
 aside > em {
