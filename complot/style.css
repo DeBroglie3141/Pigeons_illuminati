@@ -175,6 +175,9 @@ body {
     display: flex;
     flex-direction: column !important;
   }
+  .tableau {
+    padding: 50px;
+  }
 }
 
 .bandeau a{
