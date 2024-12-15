@@ -35,11 +35,8 @@ aside > em {
 
 /* Masque la barre de navigation sur les petits écrans*/
 @media (max-width: 640px) {
-    aside {
-        visibility: collapse;
-    }
     #at-center {
-        grid-template-columns: auto;
+        grid-template-columns: 0 auto;
     }
 }
 
