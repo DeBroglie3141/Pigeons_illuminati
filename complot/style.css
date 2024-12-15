@@ -67,10 +67,10 @@ body {
 }
 
 .bandeau {
-  padding-bottom: 60px;
+  padding-bottom: 10px;
   display: flex;
   flex-direction: column;
-  padding: 20px;
+  padding: 10px;
   background-image: url("20241130_091659806_iOS.jpg");
   background-repeat: no-repeat;
   background-position: center;
@@ -175,4 +175,13 @@ body {
     display: flex;
     flex-direction: column !important;
   }
+}
+
+.bandeau a{
+  color: #000000;
+  backdrop-filter: blur(100px);
+  border-radius: 25px;
+  padding: 5px;
+  justify-items: center;
+  font-size: 90%;
 }
