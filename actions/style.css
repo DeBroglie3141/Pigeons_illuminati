@@ -2,15 +2,14 @@ body {
     background-color: gray;
     color: rgb(255, 255, 255);
 
-    height: 100vh;
-    size: 100%;
-    
+    /* Met en configuration flex le bandeau à gauche et le contenu à droite, avec un espce au milieu */
     display: flex;
     justify-content: flex-start;
     gap: 30px;
 
+    /* Pour la lisibilité */
     font-size: 13px;
-    backdrop-filter: blur(5px) saturate(70%); /* Pour la lisibilité */
+    backdrop-filter: blur(5px) saturate(70%); 
 }
 
 header {
@@ -26,12 +25,8 @@ main {
 
 .bandeau {
     display: none; /* On est sur téléphone a priori*/
-    text-align: center;
-    height: 100%;
 }
-.bandeau ul {
-    text-align: left;
-}
+
 
 #science table, th, td {
     text-align: center;
@@ -47,11 +42,13 @@ main {
     }
 
     main {
+        /* Setup de la grille */
         display: grid;
         grid-template-rows: 45% 10% 45%;
         grid-template-columns: 45% 10% 45%;
     }
 
+    /* Placement des articles */
     #politique {
         grid-row: 1;
         grid-column: 1;
@@ -70,11 +67,30 @@ main {
         grid-column: 3;
     }
 
+    /* Configuration du bandeau */
     .bandeau {
-        display: block;
+        height: 100vh; /* Le bandeau doit prendre toute la page */
+
+        /* Aligne les 3 items de haut en bas : le titre en haut, les liens au centre et le logo en bas */
+        display: flex;
+        flex-direction: column;
+        justify-content:space-between;
+
         backdrop-filter: blur(10px);
+        
+        text-align: center;
+
     }
 
+    .bandeau ul {
+        text-align: left; /* Aligne la liste */
+    }
+
+    .bandeau img {
+        filter: invert(10%) sepia(100%) saturate(5901%) hue-rotate(246deg) brightness(90%) contrast(148%);
+    }
+
+    /* Désactive le titre en haut de page */
     .titre {
         display: none;
     }
