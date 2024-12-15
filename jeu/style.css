@@ -5,6 +5,8 @@
 */
 @import url(./../global_used_files/style_base.css);
 
+/* Style pour le jeu */
+@import url(./../_game/style.css);
 
 #at-center {
     /*
@@ -73,7 +75,7 @@ h2 {
     text-align: center;
 }
 
-.video {
+.embedded-content {
     border-radius: 10px;
     border: solid 2px var(--border-color);
 }
