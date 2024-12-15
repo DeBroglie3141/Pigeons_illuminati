@@ -1,12 +1,100 @@
 
-/* Variables */
+/**** ASPECT DE BASE ****/
+
+body {
+    margin: 0;
+    font-family: sans-serif;
+}
+
+section {
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+section:not(.no-auto-justify) > p {
+    text-align: justify;
+}
+
+a {
+    color: rgb(43, 106, 154);
+    font-weight: 900;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+a:visited {
+    text-decoration: line-through;
+}
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    backdrop-filter: blur(75px);
+    height: 90px;
+    z-index: 999;
+}
+
+h1 {
+    margin-top: 0;
+    margin-bottom: 0;
+    margin-left: 20px;
+    top: 40%; 
+    transform: translate(0, 50%);
+}
+
+#space-after-title {
+    height: 75px;
+}
+
+.logo-classe {
+    text-align: right;
+    height: inherit;
+    width: 100%;
+    overflow: hidden;
+}
+
+footer {
+    margin-top: 2em;
+    padding-left: 10px;
+    padding-right: 10px;
+    border-top: 10px solid rgb(42, 82, 124);
+    background-color: rgb(203, 234, 255);
+    display: flex;
+    flex-wrap: wrap;
+    padding-top: 1em;
+}
+
+footer > div {
+    height: 20em;
+    padding-left: 10px;
+    padding-right: 10px;
+    flex-basis: 150px;
+    flex-grow: 1;
+    text-align: center;
+}
+
+footer > div > em {
+    font-weight: bold;
+}
+
+footer > div > p {
+    text-align: justify;
+    word-spacing:-2px;
+}
+
+/**** VARIABLES ****/
 :root {
     /* Les gradients ont été générés avec https://non-boring-gradients.netlify.app/ */
     --red-gradient: linear-gradient(32deg, rgb(77.255% 20.784% 20.784%) 0%, rgb(77.473% 21.052% 20.585%) 6.25%, rgb(78.121% 21.844% 19.993%) 12.5%, rgb(79.172% 23.131% 19.033%) 18.75%, rgb(80.586% 24.862% 17.741%) 25%, rgb(82.309% 26.971% 16.166%) 31.25%, rgb(84.275% 29.378% 14.369%) 37.5%, rgb(86.409% 31.99% 12.42%) 43.75%, rgb(88.627% 34.706% 10.392%) 50%, rgb(90.846% 37.422% 8.365%) 56.25%, rgb(92.98% 40.033% 6.415%) 62.5%, rgb(94.946% 42.44% 4.619%) 68.75%, rgb(96.669% 44.55% 3.044%) 75%, rgb(98.083% 46.281% 1.751%) 81.25%, rgb(99.134% 47.568% 0.791%) 87.5%, rgb(99.781% 48.36% 0.2%) 93.75%, rgb(100% 48.627% 0%) 100% );
     --white-blue-gradient: linear-gradient(41deg, rgb(90.588% 94.118% 100%) 0%, rgb(90.588% 94.117% 100%) 6.25%, rgb(90.591% 94.111% 100%) 12.5%, rgb(90.6% 94.084% 99.998%) 18.75%, rgb(90.625% 94.01% 99.992%) 25%, rgb(90.678% 93.856% 99.981%) 31.25%, rgb(90.774% 93.575% 99.961%) 37.5%, rgb(90.933% 93.112% 99.928%) 43.75%, rgb(91.176% 92.402% 99.877%) 50%, rgb(91.53% 91.369% 99.804%) 56.25%, rgb(92.024% 89.929% 99.701%) 62.5%, rgb(92.691% 87.985% 99.562%) 68.75%, rgb(93.566% 85.432% 99.38%) 75%, rgb(94.69% 82.154% 99.145%) 81.25%, rgb(96.105% 78.026% 98.851%) 87.5%, rgb(97.859% 72.912% 98.485%) 93.75%, rgb(100% 66.667% 98.039%) 100% );
 }
 
-/* Animations */
+/**** ANIMATIONS ****/
 
 @keyframes vibration {
 	0% {
@@ -31,5 +119,17 @@
 
 	100% {
 		transform: translate(0);
+	}
+}
+
+@keyframes fade-in-left {
+	0% {
+		opacity: 0;
+		transform: translateX(-50px);
+	}
+
+	100% {
+		opacity: 1;
+		transform: translateX(0);
 	}
 }
