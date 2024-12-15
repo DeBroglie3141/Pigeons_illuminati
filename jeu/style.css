@@ -5,9 +5,6 @@
 */
 @import url(./../global_used_files/style_base.css);
 
-/* Style pour le jeu */
-@import url(./../_game/style.css);
-
 #at-center {
     /*
     Pour la barre de navigation à gauche sans casser le footer
