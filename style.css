@@ -35,15 +35,3 @@ body {
     background: var(--white-blue-gradient);
     background-attachment: fixed;
 }
-
-ul {
-    list-style-type: "🐦  ";
-}
-
-li {
-    margin-bottom: 10px;
-}
-
-li:hover {
-    list-style-type: "👁️  ";
-}

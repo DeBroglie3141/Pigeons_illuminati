@@ -29,6 +29,19 @@ a:visited {
     text-decoration: line-through;
 }
 
+.illu {
+    list-style-type: "🐦  ";
+}
+
+.illu-li {
+    margin-bottom: 10px;
+}
+
+.illu-li:hover {
+    list-style-type: "👁️  ";
+}
+
+
 header {
     position: fixed;
     top: 0;
