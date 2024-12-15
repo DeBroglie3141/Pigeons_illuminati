@@ -13,16 +13,17 @@
     */
     display: grid;
     grid-template-columns: 20% auto;
-    margin-top: 10pt;
+    margin-top: 15pt;
 }
 
 aside {
     padding: 15px;
+    margin-top: 10px;
+    margin-bottom: 10px;
     background-image: var(--white-blue-gradient);
     border-top-right-radius: 25px;
     border-bottom-right-radius: 25px;
-    border-color: rgb(42, 82, 124);
-    border-width: 1px;
+    border: solid 2px var(--border-color);
     animation: fade-in-left 1.5s cubic-bezier(0.65, 0, 0.35, 1) 0s 1 normal forwards;
 }
 
@@ -40,3 +41,30 @@ aside > em {
     }
 }
 
+section {
+    display: flex;
+    flex-wrap: wrap;
+    padding-top: 0;
+    padding-bottom: 0;
+}
+
+article {
+    margin: 10px;
+    padding: 10px;
+    flex-basis: 150px;
+    flex-grow: 1;
+    border-radius: 10px;
+    border: solid 2px var(--border-color);
+    background-color: rgb(228, 246, 255);
+
+}
+
+.larger {
+    flex-basis: 300px;
+    flex-grow: 2;
+}
+
+h2 {
+    margin-top: 0;
+    text-align: center;
+}
