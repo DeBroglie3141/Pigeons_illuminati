@@ -51,20 +51,29 @@ section {
 article {
     margin: 10px;
     padding: 10px;
-    flex-basis: 150px;
+    flex-basis: 200px;
     flex-grow: 1;
     border-radius: 10px;
     border: solid 2px var(--border-color);
     background-color: rgb(228, 246, 255);
-
+    text-align: justify;
 }
 
 .larger {
-    flex-basis: 300px;
+    flex-basis: 350px;
     flex-grow: 2;
 }
 
 h2 {
     margin-top: 0;
     text-align: center;
+}
+
+.centered-container {
+    text-align: center;
+}
+
+.video {
+    border-radius: 10px;
+    border: solid 2px var(--border-color);
 }

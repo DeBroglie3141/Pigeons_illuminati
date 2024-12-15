@@ -100,10 +100,6 @@ caption {
     font-weight: bold;
 }
 
-tbody {
-    font-weight: normal;
-}
-
 th:last-of-type {
     text-align: center;
 }
