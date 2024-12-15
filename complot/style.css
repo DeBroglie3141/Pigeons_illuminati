@@ -185,3 +185,54 @@ body {
   justify-items: center;
   font-size: 90%;
 }
+
+#div_secrète {
+  border-radius: 25px;
+  padding: 25px;
+  justify-items: center;
+  font-size: large;
+  background-image: url("20241202_060850464_iOS.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  text-align: center;
+}
+
+#div_secrète :hover ~ .texte_caché {
+  display: block;
+}
+
+.texte_caché {
+  display: none;
+}
+
+.img_cachée {
+  border-radius: 25px;
+  padding: 25px;
+  justify-items: center;
+  font-size: x-large;
+  background-image: url("20241130_092107854_iOS.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  justify-self: center;
+  text-align: center;
+}
+
+.crédits {
+  font-size: 80%;
+  justify-items: right;
+  text-align: right;
+  padding-bottom: 0%;
+}
+
+.logo {
+  justify-self: center;
+}
+.fin_de_page {
+  display: grid;
+  grid-template-columns: auto auto;
+  background-color: rgb(246, 247, 247);
+  border-radius: 25px;
+  padding: 20px;
+}
