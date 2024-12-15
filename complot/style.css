@@ -85,7 +85,7 @@ body {
   background-position: center;
   background-size: cover;
   -webkit-text-fill-color: transparent;
-  -webkit-background-clip: text;
+  -webkit-background-clip: text; /*Pas de réel problème, simplement, certains navigateurs ne supportent pas cette option*/
   font-size: 300%;
   text-align: center;
 }
