@@ -1,30 +1,26 @@
+ /* On est sur téléphone a priori, les options sont donc pour l'instant celles de la configuration téléphone */
 body {
     background-color: gray;
     color: rgb(255, 255, 255);
 
-    /* Met en configuration flex le bandeau à gauche et le contenu à droite, avec un espce au milieu */
-    display: flex;
-    justify-content: flex-start;
-    gap: 30px;
-
     /* Pour la lisibilité */
-    font-size: 13px;
-    backdrop-filter: blur(5px) saturate(70%); 
+    font-size: 12px;
 }
 
 header {
     text-align: center;
-    font-weight: 200;
+    font-weight: bold;
 }
 
 main {
     display: flex;
     justify-content: center;
-    flex-wrap: wrap;
+    flex-direction: column;
 }
 
-.bandeau {
-    display: none; /* On est sur téléphone a priori*/
+/* Ne pas afficher le bandeau */
+#bandeau {
+    display: none;
 }
 
 
@@ -34,11 +30,41 @@ main {
     border-collapse: collapse;
 }
 
-/* Sur ordinateur */
-@media screen and (min-width: 640px)  {
+#savoir_plus, #externes {
+    text-align: center;
+}
+
+#liens {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+/* Solution moche, mais c'est tout ce que j'ai trouvé pour changer la couleur du svg */
+/* https://stackoverflow.com/questions/22252472/how-can-i-change-the-color-of-an-svg-element */
+#externes img {
+    filter: invert(10%) sepia(100%) saturate(5901%) hue-rotate(246deg) brightness(90%) contrast(148%);
+    height: 250px;
+    width: auto;
+}
+
+/* Sur ordinateur : 740px car la page nécéssite une assez grande largeur */
+@media screen and (min-width: 740px)  {
     body {
         background-size: cover;
         background-image: url("images/bg_pigeons.jpg");
+
+        /* Met en configuration flex le bandeau à gauche et le contenu à droite, avec un espce au milieu */
+        display: flex;
+        justify-content: flex-start;
+        gap: 30px;
+
+        /* Pour la lisibilité avec le background */
+        backdrop-filter: blur(5px) saturate(70%);
+    }
+
+    /* On change la couleur des liens visités pour la lisibilité sur le background, le violet est trop sombre */
+    :visited {
+        color: blue;
     }
 
     main {
@@ -67,8 +93,13 @@ main {
         grid-column: 3;
     }
 
+    /* Ne pas afficher les liens externes, qui sont dans le bandeau */
+    #externes {
+        display: none;
+    }
+
     /* Configuration du bandeau */
-    .bandeau {
+    #bandeau {
         height: 100vh; /* Le bandeau doit prendre toute la page */
 
         /* Aligne les 3 items de haut en bas : le titre en haut, les liens au centre et le logo en bas */
@@ -76,22 +107,21 @@ main {
         flex-direction: column;
         justify-content:space-between;
 
-        backdrop-filter: blur(10px);
+        backdrop-filter: blur(10px); /* Permet de démarquer le bandeau du reste de la page */
         
         text-align: center;
-
     }
 
-    .bandeau ul {
-        text-align: left; /* Aligne la liste */
+    #bandeau ul {
+        text-align: left; /* Aligne la liste correctement */
     }
 
-    .bandeau img {
+    #bandeau img {
         filter: invert(10%) sepia(100%) saturate(5901%) hue-rotate(246deg) brightness(90%) contrast(148%);
     }
 
     /* Désactive le titre en haut de page */
-    .titre {
+    #titre {
         display: none;
     }
 }
