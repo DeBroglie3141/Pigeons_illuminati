@@ -77,3 +77,7 @@ h2 {
     border-radius: 10px;
     border: solid 2px var(--border-color);
 }
+
+img {
+    width: 75%;
+}
