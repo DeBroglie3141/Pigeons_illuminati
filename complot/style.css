@@ -10,7 +10,7 @@ body {
   display: grid;
   grid-template-columns: auto auto;
   padding: 20px;
-  background-image: url("haut_de_page_pigeons2.jpg");
+  background-image: url("images/haut_de_page_pigeons2.jpg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -20,7 +20,7 @@ body {
 
 .haut_de_page {
 
-  background-image: url("haut_de_page_pigeons.jpg");
+  background-image: url("images/haut_de_page_pigeons.jpg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -71,7 +71,7 @@ body {
   display: flex;
   flex-direction: column;
   padding: 10px;
-  background-image: url("20241130_091659806_iOS.jpg");
+  background-image: url("images/img_1.jpg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -80,18 +80,18 @@ body {
 }
 
 .titre_transparent {
-  background-image: url("haut_de_page_pigeons.jpg");
+  background-image: url("images/haut_de_page_pigeons.jpg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
   -webkit-text-fill-color: transparent;
-  -webkit-background-clip: text;
+  -webkit-background-clip: text; /*Pas de réel problème, simplement, certains navigateurs ne supportent pas cette option*/
   font-size: 300%;
   text-align: center;
 }
 
 body {
-  cursor: url("pigeon_bird_icon_250707.png"), auto;
+  cursor: url("images/curseur_pigeon.png"), auto;
 }
 
 .page h2 {
@@ -106,7 +106,7 @@ body {
   display: grid;
   grid-template-columns: auto;
   padding: 100px;
-  background-image: url("20241202_060716741_iOS.jpg");
+  background-image: url("images/img_3.jpg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -137,7 +137,7 @@ body {
   display: grid;
   grid-template-columns: auto;
   padding: 100px;
-  background-image: url("20241202_060850464_iOS.jpg");
+  background-image: url("images/img_4.jpg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -194,7 +194,7 @@ body {
   padding: 25px;
   justify-items: center;
   font-size: large;
-  background-image: url("20241202_060850464_iOS.jpg");
+  background-image: url("images/img_4.jpg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -214,7 +214,7 @@ body {
   padding: 25px;
   justify-items: center;
   font-size: x-large;
-  background-image: url("20241130_092107854_iOS.jpg");
+  background-image: url("images/img_2.jpg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
